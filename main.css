@@ -1,0 +1,139 @@
+body {
+  background: #474747;
+}
+
+header {
+  background: white;
+}
+
+article {
+  background: white;
+  margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  border: 9px solid transparent;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  min-height: 1143px;
+  max-width: 816px;
+  text-overflow: ellipsis;
+  overflow: auto;
+  page-break-after: always;
+}
+
+footer {
+  background: white;
+}
+
+h1.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.title, .author {
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-indent: 0em;
+}
+
+section {
+  padding-top: 16px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+section p {
+  text-indent: 1em;  
+}
+
+.abstract {
+  text-indent: 1em;  
+}
+
+.keyword {
+  text-indent: 1em;  
+}
+
+.keyword:before {
+  font-weight: bold;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  content: "キーワード： ";
+}
+
+.col-2 {
+  column-count: 1;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+
+  article {
+    background: white;
+    margin: 0 auto;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    border: 9px solid transparent;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 816px;
+    max-height: 1143px;
+    text-overflow: ellipsis;
+    overflow: auto;
+  }
+
+  .col-2 {
+    column-count: 2;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+}
+
+/* @media print {
+  @page {
+    margin: 0;
+    padding: 0;
+  }
+
+  body, header, footer {
+    width: 100vw;
+    background: white;
+    margin: 0 auto;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 100vw;
+    background: white;
+  }
+
+  section {
+    background: white;
+    padding: 0;
+  }
+
+  article {
+    background: white;
+    margin: 0 auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 816px;
+    max-height: 1143px;
+    text-overflow: ellipsis;
+    overflow: auto;
+  }
+
+  .col-2 {
+    column-count: 2;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+} */
