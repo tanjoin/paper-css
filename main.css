@@ -94,41 +94,42 @@ section p {
 
 }
 
-/* @media print {
+@media print {
   @page {
+    size: A4;
+    margin: 20mm 25mm 20mm 25mm;
+  }
+
+  body {
+    background: white !important;
     margin: 0;
     padding: 0;
   }
 
-  body, header, footer {
-    width: 100vw;
-    background: white;
-    margin: 0 auto;
-  }
-
-  main {
-    margin: 0 auto;
-    width: 100vw;
-    background: white;
-  }
-
-  section {
-    background: white;
+  header, footer {
+    background: white !important;
+    margin: 0;
     padding: 0;
+    width: auto;
   }
 
-  article {
-    background: white;
+  main, article {
+    background: white !important;
     margin: 0 auto;
     padding-top: 72px;
     padding-bottom: 72px;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    margin-top: 8px;
-    margin-bottom: 8px;
     width: 816px;
-    max-height: 1143px;
-    text-overflow: ellipsis;
-    overflow: auto;
+    min-height: 1143px;
+    max-height: none;
+    box-sizing: border-box;
+    border: none;
+    overflow: visible;
+    page-break-after: always;
+  }
+
+  section {
+    background: white !important;
+    padding: 0 36px;
   }
 
   .col-2 {
@@ -136,4 +137,11 @@ section p {
     max-width: 95%;
     margin: 0 auto;
   }
-} */
+
+  /* Remove shadows, colors, etc. for print clarity */
+  * {
+    box-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+  }
+}
